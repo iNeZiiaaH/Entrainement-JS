@@ -1,0 +1,56 @@
+body{
+    background: rgb(174, 174, 174);
+    margin: 0%;
+}
+.header{
+    background: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+#zone1{
+    background: url('../img/animal1.jpg') no-repeat center center;
+    transition: 500ms;
+    background-size: cover;
+    width:100vw;
+    height: 90vh;
+}
+
+.affiche{
+    animation: opac 0.5s linear;
+}
+.effet {
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    max-width: 25vw;
+    height: 90vh;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#zone2 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+        grid-template-areas: 
+        "figure figure figure figure "
+        "figure figure figure figure "
+        "figure figure figure figure ";       
+}
+.vignette{
+    width:100%;
+}
+figure{
+    overflow: hidden;  /* sert a mettre ce qui depasse de la div dans la div  */
+    cursor: pointer;
+    max-width: 320px;
+    background-color: white;
+    border-radius: 20px;
+    transition: 1.5s;
+}
+
+
+

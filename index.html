@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evaluation</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/main.js"></script>
+</head>
+<body>
+    <div class="header">
+            <div id="titre">
+                <h1>Galerie</h1>
+            </div>
+            <select  id="filtre" onchange="majInterface(this.value)">
+            <option value="">Tout Afficher</option>
+            <option value="Animaux">Animaux</option>
+            <option value="Personnes">Personnes</option>
+            <option value="Paysages">Paysages</option>
+            </select>
+    </div>
+    <div id="zone1">
+            <div class="effet">
+    
+                <div>
+                    <h3>Nom</h3>
+                    <p id="nom">Animal1</p>
+                </div>
+                <div>
+                    <h3>Catégorie</h3>
+                    <p id="categorie">Animeaux</p>
+                </div>
+                <div>
+                    <h3>Prix</h3>
+                    <p id="prix">200€</p>
+                </div>
+            </div>
+    </div>
+
+
+    <div id="zone2"></div>
+    
+    
+</body>
+</html>
